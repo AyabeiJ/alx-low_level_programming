@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c intel syntax $CFILE
+gcc -S intel syntax $CFILE
