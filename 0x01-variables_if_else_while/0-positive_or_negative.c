@@ -1,17 +1,17 @@
-#include <stdlib.h>
+#include <stdilb.h>
 #include <time.h>
 #include <stdio.h>
 /**
- * main -main blcok
- * Description: get a random number and print the number and if it is positive, negative, or zero
+ * main - main block
+ * Description: get random number and print the number and if it is postitive, negative or zero
  * Return:0
  */
 int main(void)
 {
 	int n;
-	
+
 	srand(time(0));
-	n = reand() -RAND_MAX / 2;
+	n = rand() -RAND_MAX / 2;
 	if (n > 0)
 		printf("%i is positive\n", n);
 	else if (n < 0)
@@ -20,4 +20,4 @@ int main(void)
 		printf("%i is zero\n", n);
 	return (0);
 }
-       
+		
