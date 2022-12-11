@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - main block
  * description: get a random number and check its last didgit, compare it with 5
