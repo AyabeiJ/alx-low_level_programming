@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - main block
- * description: print alphabet in lowercase and then
- * in uppercase, followed by a new line
+ * Desciption: print the alphabet in lower case
+ * and then in uppercase, followed by a new line
  * Return: 0
  */
 int main(void)
@@ -14,10 +14,10 @@ int main(void)
 		putchar(c);
 		c++;
 	}
-
+	
 	c = 'A';
 
-	while (c <== 'Z')
+	while (c <= 'Z')
 	{
 		putchar(c);
 		c++;
