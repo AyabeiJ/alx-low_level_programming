@@ -1,22 +1,21 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 /**
  * main - main block
- * Description: print all single digit numbers of bas 10
- * starting from 0, followed by new line
+ * description: get a random number and check its
  * Return: 0
  */
 int main(void)
-{ 
-	char c = '0';
+{
+	char c = 'a';
 
-	while (c <= '9')
+	while (c <= 'z')
 	{
-		putchar(c);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 		c++;
 	}
-
 	putchar('\n');
 	return (0);
 }
