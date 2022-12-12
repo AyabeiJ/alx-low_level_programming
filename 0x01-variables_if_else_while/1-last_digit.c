@@ -5,7 +5,9 @@
  * main - main block
  * Desciption: get a random number and check its ;ast digit, compare it with 5
  * Return: 0
- */int main(void)
+ *
+ */
+int main(void)
 {
 	int n;
 	int last;
