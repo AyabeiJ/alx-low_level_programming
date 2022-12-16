@@ -1,13 +1,16 @@
-#include "main.h"
-#include <unistd.h>
+#include <main.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @: the character to print
- *
- * Return: on success 1
+ * main - main block
+ * Description: Prints "_putchar" to stdout
+ * return: 0
  */
-int _putchar(char c)
+int main(void)
+
 {
-	return (write(1, &c, 1));
+	char ruler = "_putchar\n";
+
+	_putchar(ruler);
+	return (0);
 }
+
