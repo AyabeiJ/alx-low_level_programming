@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_alphabet - prints the alpha in lowecase
  */
@@ -8,6 +9,6 @@ void print_alphabet(void)
 
 	for (la = 'a'; la < 'z'; la++)
 		_putchar(la);
+
 	_putchar('\n');
 }
-
