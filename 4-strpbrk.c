@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - function locates string for any of set of byte
+ * _strpbrk - function searches a string for any of a set of byte
  * @s: string to recieve
  * @accept: byte to accept
  * Return: char
@@ -27,5 +27,5 @@ char *_strpbrk(char *s, char *accept)
 			return (s);
 		s++;
 	}
-	return (NULL)
+	return (NULL);
 }
