@@ -6,6 +6,7 @@
  * @accept: byte to check
  * Return: unsigned int
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int cont = 0;
@@ -18,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 		while (*(accept + j) != '\0')
 		{
 			if (*s == *(accept + j))
-			flag = 1;
+				flag = 1;
 			j += 1;
 		}
 		j = 0;
