@@ -4,7 +4,7 @@
  * **alloc_grid - creates a two dimensional array of ints
  * @width: width of the matrix
  * @height: height of the matrix
- * Return: always 0 (success) or error (NULL)
+ * Return: pointer to the creatd matrix (success) or error (NULL)
  */
 
 int **alloc_grid(int width, int height)
@@ -26,6 +26,7 @@ int **alloc_grid(int width, int height)
 		{
 			free(array);
 			for (j = 0; j <= i; j++)
+				free(array[j]);
 				return (NULL);
 		}
 	}
