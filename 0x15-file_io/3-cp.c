@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 		w = write(to, buffer, r);
 		if (to == -1 || w == -1)
 		{
-			printf(STDERR_FILENO,
+			dprintf(STDERR_FILENO,
 					"Error: can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 
 	} while (r > 0);
 
-	fre(buffer);
+	free(buffer);
 	close_file(from);
 	close_file(to);
 
