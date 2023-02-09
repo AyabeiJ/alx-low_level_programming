@@ -6,8 +6,9 @@ char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
- * create_buffer - allocates 1024 bytes for a buffer
+ * create_buffer - Allocates 1024 bytes for a buffer
  * @file: the name of the file buffer is storing chars for
+ *
  * Return: a pointer to the newly-allocated buffer
  */
 char *create_buffer(char *file)
@@ -19,7 +20,7 @@ char *create_buffer(char *file)
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
-				"Error: can't write to %s\n", file);
+				"Error: Can't write to %s\n", file);
 		exit(99);
 	}
 
@@ -70,11 +71,12 @@ int main(int argc, char *argv[])
 	from = open(argv[1], O_RDONLY);
 	r = read(from, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	
 	do {
 		if (from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: cant't read from file %s\n", argv[1]);
+					"Error: Cant't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -83,7 +85,7 @@ int main(int argc, char *argv[])
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: can't write to %s\n", argv[2]);
+					"Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
